@@ -13,10 +13,14 @@ class _HomeScreenState extends State<HomeScreen> {
  List<Album> getAlbum = [];
 
 
-  Future getAlbumData()async{
+  Future<void> getAlbumData()async{
    await GetAlbumProvider().getAlbumData(context);
 
   }
+ Future<void> gAlbumData()async{
+   await GetAlbumProvider().getAlbumData(context);
+
+ }
   @override
   void initState() {
     getAlbumData();
